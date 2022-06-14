@@ -15,6 +15,6 @@ class Bebidas {
     }
 }
 
-const viaje1 = new Bebidas("Vodka saborizado", 15, 2100)
-const viaje2 = new Bebidas("Vodka comun", 10, 1999)
-const viaje3 = new Bebidas("Fernet", 5, 3000)
+const bebida1 = new Bebidas("Vodka saborizado", 15, 2100)
+const bebida2 = new Bebidas("Vodka comun", 10, 1999)
+const bebida3 = new Bebidas("Fernet", 5, 3000)
