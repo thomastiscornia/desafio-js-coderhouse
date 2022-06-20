@@ -18,24 +18,25 @@ class Bebidas {
 const stock = [];
 
 function sumarStock(){
-    stock.push (new Bebidas(bebida = prompt("Ingrese una bebida"),cantidadEnAlmacen = +(prompt("Ingrese la cantidad de botellas sumadas al stock")), precioBebida = +(prompt("Ingrese el precio de la bebida"))  ))
+    stock.push (new Bebidas(bebida = prompt("Ingrese el nombre de la bebida a ingresar"),cantidadEnAlmacen = +(prompt("Ingrese la cantidad de botellas que sumará al stock")), precioBebida = +(prompt("Ingrese el precio por unidad de la bebida ingresada"))  ))
 }
 
 let cantidadIngresos;
 
 do{
-   cantidadIngresos = +(prompt("Ingrese la cantidad de productos a sumar"));
-} while (isNaN(cantidadIngresos));
+    cantidadIngresos = +(prompt("Ingrese la cantidad a ingresar"));
+} while(isNaN(cantidadIngresos));
+
 for (let i = 0; i < cantidadIngresos; i++){
-        sumarStock ();
+    sumarStock ();
 };
 
 
-function listarProductos() {
+function listarProductos() { //Utilizar esta funcion en consola
     console.clear()
     console.table(stock)
 }
 
 function consultarStock(){
-    alert("Actualmente, disponemos de un total de " + stock.lengt + " productos en stock ") // Me devuelve undefined, no entiendo bien por que.
+    alert("Actualmente, disponemos de un total de " + stock.length + " productos en stock ") ///Utilizar esta funcion en consola
 }
